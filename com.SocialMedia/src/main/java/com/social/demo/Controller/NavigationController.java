@@ -8,13 +8,20 @@ public class NavigationController {
 
 	@GetMapping("/")
 	public String index() {
-		System.out.println("NavigationController / home");
+		System.out.println("NavigationController /  index");
 		return "index";
 	}
 	
 	@GetMapping("/openSignUp")
 	public String openSignUp(){
-		System.out.println("NavigationController openSignUp home");
+		System.out.println("NavigationController openSignUp signUp");
 		return "signUp";
 	}
+	
+	@GetMapping("/openCreatePost")
+	public String openCreatePost() {
+		System.out.println("NavigationController openCreatePost createPost");
+		return "createPost";
+	}
+	
 }

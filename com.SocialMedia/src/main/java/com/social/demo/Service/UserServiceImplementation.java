@@ -30,7 +30,6 @@ public class UserServiceImplementation implements UserService{
 
 	@Override
 	public boolean validateUser(String username, String password) {
-		// TODO Auto-generated method stub
 		
 		String dbPass=repo.findByUsername(username).getPassword();
 		if(password.equals(dbPass)) {

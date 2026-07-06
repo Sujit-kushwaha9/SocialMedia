@@ -26,7 +26,7 @@ public class UserController {
 		if(status==false) {
 			service.addUser(user);
 		}
-		System.out.println("UserController addUser home");
+		System.out.println("UserController addUser index");
 		return "index";
 	}
 	
