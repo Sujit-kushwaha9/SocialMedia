@@ -18,7 +18,7 @@ public class PostController {
 	PostService service;
 	
 	@PostMapping("/createPost")
-	public String createPost(@RequestParam("caption") String caption,
+	public String createPost(@RequestParam ("caption") String caption,
 			@RequestParam("photo") MultipartFile photo) {
 		Post post=new Post();
 		post.setCaption(caption);

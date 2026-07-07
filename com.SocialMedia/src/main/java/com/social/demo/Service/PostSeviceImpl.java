@@ -1,5 +1,7 @@
 package com.social.demo.Service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +18,11 @@ public class PostSeviceImpl implements PostService{
 	public void createPost(Post post) {
 		// TODO Auto-generated method stub
 		repo.save(post);
+	}
+
+	@Override
+	public List<Post> getAllPost() {
+		return repo.findAll();
 	}
 
 }
